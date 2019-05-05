@@ -177,7 +177,7 @@ If **$PrintDropdownMenu = false;** then all printing is suppressed. See below fo
       include("dropdown-menu.php");
       print $DropdownCSS; ?>
       ```
-    in the <head> </head> area of your page.
+    in the &lt;head> &lt;/head> area of your page.
 6.  Edit your page to _insert_  
       ```php
       <div class="dropdownmenu">
@@ -204,23 +204,23 @@ If you want to stick to .htm/.html for your normal website, _and_ you have PHP a
 5.  Load **http://www.yourwebsite.com/dropdown-menu.php?css=y** in your browser
 6.  Save the page locally as **wxmenu.css** and edit it to _remove_:  
 
-       ```html
-       <!-- begin dropdown-menu.php CSS definition -->  
-       <style type="text/css">
-       ```  
+```html
+<!-- begin dropdown-menu.php CSS definition -->  
+<style type="text/css">
+```  
 
     at the top of the file, and _remove_ from the bottom of the file:  
 
-       ```html
-       </style>  
-       <!--[if lte IE 6]>  
-       <style type="text/css">  
-       .dropdownmenu ul ul {left:-1px; margin-left:-1px;}  
-       .dropdownmenu ul ul ul.left {margin-left:1px;}  
-       </style>  
-       <![endif]-->  
-       <!-- end of dropdown-menu.php CSS definition -->
-      ```  
+```html
+</style>  
+<!--[if lte IE 6]>  
+<style type="text/css">  
+.dropdownmenu ul ul {left:-1px; margin-left:-1px;}  
+.dropdownmenu ul ul ul.left {margin-left:1px;}  
+</style>  
+<![endif]-->  
+<!-- end of dropdown-menu.php CSS definition -->
+```  
 
     then save and upload the wxmenu.css file to your website.  
 
@@ -249,9 +249,10 @@ If you want to stick to .htm/.html for your normal website, _and_ you have PHP a
 11.  Repeat steps (9) and (10) for each page in your website.
 
 If you have Server Side Includes (SSI) available, the step (10) can be replaced with the following SSI directive:  
-    ```html
-    <div class="dropdownmenu"><!--#include virtual="wxmenu.html" --></div>
-    ```
+
+```html
+<div class="dropdownmenu"><!--#include virtual="wxmenu.html" --></div>
+```
 
 This dropdown menu system has been tested and **works with**:  
 Internet Explorer 5.5, 6 and 7, Firefox 1.5, 2.0, Opera 9, Safari for Windows 3.0.3, Netscape 8.1.2.  
