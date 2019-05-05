@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- menu control file for dropdown-menu.php program -->
+<!-- Ken True - available at http://saratoga-weather.org/scripts-CSSmenu.php -->
+<!-- NOTE: this file must be correct XML with all tag items properly closed  -->
+<!-- Structure of file is
+
+  <menu>
+     <item caption="Main 1" link="main1.php" title="leftmost menu item"/>
+	 <item caption="Main 2" title="Main menu number 2">
+	    <item caption="Drop down 1" link="dropdown1.php"/>
+	    <item caption="Drop down 2" link="dropdown2.php">
+		   <item caption="Flyout 1" link="flyout1.php"/>
+		   <item caption="Flyout 2" link="flyout2.php"/>
+		   <item caption="Flyout 3" link="flyout3.php">
+		     <item caption"Fourth Level Flyout 1" link"level4a.php"/>
+		     <item caption"Fourth Level Flyout 2" link"level4b.php"/>
+		     <item caption"Fourth Level Flyout 3" link"level4c.php"/>
+		   </item>
+		</item>
+	    <item caption="Drop down 3" link="dropdown3.php"/>
+	 </item>
+   </menu>
+   
+ Failure to follow this structure or nest more than 3 sublevels
+ may result in unexpected (and incorrect) results .. the top/sub1/sub2/sub3 four
+ level menu should allow for highly complex websites.
+-->
+<menu>
+	<item caption="Home" link="/index.php" title="Home Page for Saratoga-weather.org"/>
+	<item caption="Live" title="Realtime display of weather conditions, webcam, NOAA Radio">
+		<item caption="Weather-Display Live" link="/WD-Live.php"/>
+		<item caption="Wunderground Live" link="/rapid-fire.php"/>
+		<item caption="Saratoga NetCam" link="/netcam.php"/>
+		<item caption="NOAA Weather Radio" link="/radio.php"/>
+	</item>
+	<item caption="Radar" link="/radar.php" title="GRLevel3 and Wunderground Radar from NWS"/>
+	<item caption="Lightning" link="/lightning.php" title="Boltek/NexStorm Lightning maps">
+		<item caption="NexStorm, WASP-2" link="/lightning.php" />
+		<item caption="StormVue display (JAVA)" link="/stormvue.php" title="Note: StormVue requires Java be enabled for display"/>
+	</item>
+	<item caption="Mesomap" title="Mesomaps, SF Bay, Southwest, Marine Buoys">
+		<item caption="SF Bay - Mesomap Live" link="/MML.php"/>
+		<item caption="Southwestern Weather Network" link="/SWN.php"/>
+		<item caption="Nearby Buoys" link="/buoys.php"/>
+	</item>
+	<item caption="Tropical" link="/tropical.php" title="Tropical conditions in Eastern Pacific and Atlantic/Gulf of Mexico/Caribbean"/>
+	<item caption="Almanac" title="Forecasts, UV Index, Trends, Tides, Sun/Moon, Climate">
+		<item caption="NWS Forecast details" link="/forecast-new.php"/>
+		<item caption="WXSIM Forecast details" link="/WXSIM-forecast.php"/>
+		<item caption="UV Index" link="/UV-index.php"/>
+		<item caption="Earthquake activity" link="/earthquake.php"/>
+		<item caption="Weather Trends" link="/trends.php"/>
+		<item caption="So. SF Bay Tides" link="/tides-SF-bay.php"/>
+		<item caption="Sun/Moon Almanac" link="/sunmoon.php"/>
+		<item caption="NOAA Image of the day" link="/NOAA-IOD.php"/>
+		<item caption="Wunderground Weather Maps" link="/maps.php"/>
+		<item caption="Station Graphs" link="/graphs.php"/>
+		<item caption="NOAA Rpts" link="/NOAA-reports.php"/>
+	</item>
+	<item caption="Stickers" link="/sticker.php" title="Get a free weather graphic for your website"/>
+	<item caption="Scripts" link="/scripts.php" title="Free PHP/Perl scripts">
+		<item caption="AJAX Scripts">
+			<item caption="AJAX Weather-Display Carterlake templates" link="/scripts-WD-AJAX.php#WDajax"/>
+			<item caption="AJAX Weather-Display with PHP" link="/scripts-WD-AJAX-PHP.php#WDajaxPHP"/>
+			<item caption="AJAX VWS / Weather Flash" link="/scripts-VWS-AJAX.php#VWSajaxwf"/>
+			<item caption="AJAX VWS / data.csv" link="/scripts-VWS-AJAX-V1.php#VWSajax"/>
+		</item>
+		<item caption="Forecasts">
+  			<item caption="NWS Forecast with icons" link="/scripts-carterlake.php#advforecast"/>
+			<item caption="Envt Canada Forecast/Advisory (English/French)" link="/scripts-ECforecast.php#ECforecast"/>
+  			<item caption="WXSIM Forecast with icons - multi-lingual" link="/scripts-WXSIM.php#plaintext"/>
+  			<item caption="WXSIM Forecast with icons RSS 2.0 feed multi-lingual" link="/scripts-WXSIM.php#plaintextRSS"/>
+			<item caption="NWS and WU forecast (perl)" link="/scripts-perl.php#WRHperl"/>
+		</item>
+		<item caption="Advisories">
+			<item caption="NOAA RSS Advisory" link="/scripts-rss.php#NOAARSS"/>
+			<item caption="Carterlake NOAA testadvisory.php" link="/scripts-carterlake.php#advisory"/>
+			<item caption="NHC RSS advisory" link="/scripts-rss.php#NHCRSS"/>
+			<item caption="SPC RSS mesoscale disc." link="/scripts-rss.php#SPCRSS"/>
+		</item>
+		<item caption="Radar">
+			<item caption="Envt Canada Radar (English/French)" link="/scripts-ECradar.php#ECradar"/>
+		</item>
+		<item caption="Mesomap">
+			<item caption="NDBC Buoy data mesomap " link="/scripts-buoy.php#buoydata"/>
+		</item>
+		<item caption="Climate/Geology">
+			<item caption="NOAA.txt display" link="/scripts-NOAATXT.php#NOAAtxtPHP"/>
+			<item caption="USGS earthquakes" link="/scripts-quake.php#quakePHP"/>
+		</item>
+		<item caption="Image handlers">
+			<item caption="Resize/Cache NexStorm, WASP2" link="/scripts-images.php#lightning"/>
+			<item caption="Resize/Cache NOAA IOD" link="/scripts-images.php#NOAAIOD"/>
+			<item caption="Wind Direction Icons" link="/scripts-images.php#WIND"/>
+		</item>
+		<item caption="References for programmers" link="/scripts.php#reference"/>
+		<item caption="RSS Feed for Script changes" link="/rss-scripts.php"/>
+		<item caption="PHP Utility">
+			<item caption="Got PHP? Test it!" link="/scripts.php#PHPTest"/>
+			<item caption="PHP Weather-Display Tags" link="/scripts.php#PHPtags"/>
+			<item caption="PHP for CSS dropdown menus" link="/scripts-CSSmenu.php#dropdown"/>
+		</item>
+	</item>
+	<item caption="About" title="About us, website map">
+	  <item caption="About Saratoga-Weather.org" link="/station.php"/>
+	  <item caption="Website Map" link="/sitemap.php"/>
+	</item>
+</menu>
