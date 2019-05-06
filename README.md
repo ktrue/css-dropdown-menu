@@ -280,7 +280,7 @@ This menu system is DHTML-based. Some applets and scripts are known to have prob
    <param name="wmode" value="opaque" />
 ```  
 
-to the <object> invoking the Flash Player. If you're using the swfobject.js to launch the Flash Player, then include **so.addParam("wmode", "transparent");** before the **so.write("flashcontent");** in the JavaScript on the page. (see example at [WD-Live.php](/WD-Live.php) -- view source)</dd>
+to the <object> invoking the Flash Player. If you're using the swfobject.js to launch the Flash Player, then include **so.addParam("wmode", "transparent");** before the **so.write("flashcontent");** in the JavaScript on the page.</dd>
 
 <dt>**Java Applet** (not JavaScript)</dt>
 
